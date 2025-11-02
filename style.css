@@ -109,13 +109,7 @@ header .phone:hover {
   background-color: var(--accent-darker);
 }
 
-.whatsapp-icon {
-  width: 1.25rem;
-  height: 1.25rem;
-  flex-shrink: 0;
-}
-
-/* Hamburger Menu */
+/* Navigation Menu */
 .menu-toggle {
   display: none;
   background: none;
@@ -337,11 +331,6 @@ section#contato a:hover {
   transform: translateY(-2px);
 }
 
-.contact-whatsapp .whatsapp-icon {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
 section#contato {
   text-align: center;
 }
@@ -377,9 +366,6 @@ footer p {
 }
 
 footer a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
   color: var(--accent);
   text-decoration: none;
   font-weight: 600;
