@@ -6,11 +6,9 @@ menuToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// Fechar menu ao clicar em um link (exceto links externos)
 const navLinks = navMenu.querySelectorAll('a');
 navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        // Não fechar o menu para links externos (WhatsApp)
+    link.addEventListener('click', () => {
         if (!link.target || link.target !== '_blank') {
             menuToggle.classList.remove('active');
             navMenu.classList.remove('active');
@@ -18,10 +16,43 @@ navLinks.forEach(link => {
     });
 });
 
-// Fechar menu ao clicar fora
 document.addEventListener('click', (e) => {
     if (!e.target.closest('header') && navMenu.classList.contains('active')) {
         menuToggle.classList.remove('active');
         navMenu.classList.remove('active');
     }
 });
+
+// Header glassmorphism on scroll
+const header = document.querySelector('header');
+window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 24);
+}, { passive: true });
+
+// Scroll-triggered fade-up animations
+const services = Array.from(document.querySelectorAll('.service.fade-up'));
+const serviceObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            const index = services.indexOf(entry.target);
+            setTimeout(() => {
+                entry.target.classList.add('visible');
+            }, index * 110);
+            serviceObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+services.forEach(el => serviceObserver.observe(el));
+
+const fadeEls = document.querySelectorAll('.fade-up:not(.service)');
+const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            fadeObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+fadeEls.forEach(el => fadeObserver.observe(el));
