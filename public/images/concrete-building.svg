@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1125" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="cb-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9ebe6"/>
+      <stop offset="1" stop-color="#d5d8d2"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1125" fill="url(#cb-sky)"/>
+  <!-- torre -->
+  <rect x="200" y="120" width="380" height="1005" fill="#bcc0b9"/>
+  <rect x="580" y="120" width="150" height="1005" fill="#888d86"/>
+  <!-- grelha de fachada -->
+  <g fill="#9ea39c">
+    <rect x="200" y="220" width="380" height="14"/>
+    <rect x="200" y="340" width="380" height="14"/>
+    <rect x="200" y="460" width="380" height="14"/>
+    <rect x="200" y="580" width="380" height="14"/>
+    <rect x="200" y="700" width="380" height="14"/>
+    <rect x="200" y="820" width="380" height="14"/>
+    <rect x="200" y="940" width="380" height="14"/>
+    <rect x="200" y="1060" width="380" height="14"/>
+  </g>
+  <g fill="#aaafa8">
+    <rect x="290" y="120" width="14" height="1005"/>
+    <rect x="390" y="120" width="14" height="1005"/>
+    <rect x="490" y="120" width="14" height="1005"/>
+  </g>
+  <!-- recortes de sombra nas janelas -->
+  <g fill="#767b75" opacity="0.55">
+    <rect x="214" y="248" width="66" height="78"/>
+    <rect x="314" y="368" width="66" height="78"/>
+    <rect x="414" y="488" width="66" height="78"/>
+    <rect x="214" y="608" width="66" height="78"/>
+    <rect x="414" y="728" width="66" height="78"/>
+    <rect x="314" y="848" width="66" height="78"/>
+  </g>
+  <!-- coroamento -->
+  <rect x="200" y="120" width="530" height="12" fill="#767b74"/>
+  <rect x="196" y="112" width="538" height="8" fill="#054205"/>
+  <text x="770" y="640" font-family="monospace" font-size="13" letter-spacing="3" fill="#171a18" opacity="0.4" transform="rotate(90 770 640)">STRUCTURAL DESIGN</text>
+</svg>

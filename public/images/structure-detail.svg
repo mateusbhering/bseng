@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sd-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dcdfd9"/>
+      <stop offset="1" stop-color="#c6cac3"/>
+    </linearGradient>
+    <linearGradient id="sd-col" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b3b7b0"/>
+      <stop offset="0.5" stop-color="#9da29b"/>
+      <stop offset="1" stop-color="#82877f"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="900" fill="url(#sd-bg)"/>
+  <!-- viga -->
+  <rect x="0" y="180" width="900" height="150" fill="#a8ada6"/>
+  <rect x="0" y="322" width="900" height="8" fill="#767b74"/>
+  <rect x="0" y="180" width="900" height="10" fill="#c1c5be"/>
+  <!-- pilar -->
+  <rect x="330" y="330" width="240" height="570" fill="url(#sd-col)"/>
+  <!-- juntas de forma -->
+  <g fill="#8b908a" opacity="0.6">
+    <rect x="330" y="470" width="240" height="4"/>
+    <rect x="330" y="640" width="240" height="4"/>
+    <rect x="330" y="810" width="240" height="4"/>
+  </g>
+  <g fill="#8b908a" opacity="0.5">
+    <rect x="150" y="180" width="4" height="150"/>
+    <rect x="450" y="180" width="4" height="150"/>
+    <rect x="750" y="180" width="4" height="150"/>
+  </g>
+  <!-- furos de forma -->
+  <g fill="#7c817b">
+    <circle cx="390" cy="420" r="7"/>
+    <circle cx="510" cy="420" r="7"/>
+    <circle cx="390" cy="580" r="7"/>
+    <circle cx="510" cy="580" r="7"/>
+  </g>
+  <!-- eixo -->
+  <g stroke="#054205" stroke-width="2" stroke-dasharray="14 10" opacity="0.6">
+    <line x1="450" y1="60" x2="450" y2="900"/>
+  </g>
+  <text x="475" y="96" font-family="monospace" font-size="13" letter-spacing="3" fill="#171a18" opacity="0.4">EIXO P-12</text>
+</svg>

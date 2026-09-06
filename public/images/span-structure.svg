@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sp-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8eae5"/>
+      <stop offset="1" stop-color="#d4d7d1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sp-sky)"/>
+  <!-- casca curva de grande vão -->
+  <path d="M 60 700 Q 600 120 1140 700 L 1140 740 Q 600 180 60 740 Z" fill="#9da29b"/>
+  <path d="M 60 700 Q 600 120 1140 700 L 1140 712 Q 600 140 60 712 Z" fill="#c2c6bf"/>
+  <!-- apoios -->
+  <rect x="48" y="640" width="60" height="160" fill="#82877f"/>
+  <rect x="1092" y="640" width="60" height="160" fill="#82877f"/>
+  <!-- tirantes -->
+  <g stroke="#767b74" stroke-width="6">
+    <line x1="300" y1="742" x2="300" y2="486"/>
+    <line x1="480" y1="756" x2="480" y2="390"/>
+    <line x1="600" y1="760" x2="600" y2="368"/>
+    <line x1="720" y1="756" x2="720" y2="390"/>
+    <line x1="900" y1="742" x2="900" y2="486"/>
+  </g>
+  <!-- tabuleiro -->
+  <rect x="60" y="736" width="1080" height="26" fill="#a8ada6"/>
+  <rect x="60" y="762" width="1080" height="6" fill="#767b74"/>
+  <!-- eixo do arco -->
+  <path d="M 60 700 Q 600 120 1140 700" fill="none" stroke="#054205" stroke-width="2" stroke-dasharray="12 10" opacity="0.5" transform="translate(0 -34)"/>
+  <text x="540" y="300" font-family="monospace" font-size="13" letter-spacing="3" fill="#171a18" opacity="0.4">R = CONST.</text>
+</svg>

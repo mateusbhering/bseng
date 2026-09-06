@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="a1-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8eae5"/>
+      <stop offset="1" stop-color="#d6d9d3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#a1-sky)"/>
+  <!-- laje horizontal em balanço -->
+  <rect x="80" y="260" width="1040" height="34" fill="#a7aca5"/>
+  <rect x="80" y="294" width="1040" height="8" fill="#878c85"/>
+  <!-- volume recuado -->
+  <rect x="220" y="302" width="760" height="330" fill="#bfc3bc"/>
+  <rect x="220" y="302" width="760" height="12" fill="#9ba099"/>
+  <!-- pilares -->
+  <g fill="#8f948d">
+    <rect x="160" y="302" width="26" height="418"/>
+    <rect x="420" y="632" width="26" height="88"/>
+    <rect x="700" y="632" width="26" height="88"/>
+    <rect x="1010" y="302" width="26" height="418"/>
+  </g>
+  <!-- planos de vidro sugeridos -->
+  <g fill="#7c817b">
+    <rect x="280" y="360" width="140" height="272"/>
+    <rect x="470" y="360" width="140" height="272"/>
+    <rect x="660" y="360" width="140" height="272"/>
+    <rect x="850" y="360" width="100" height="272"/>
+  </g>
+  <!-- solo -->
+  <rect x="0" y="720" width="1200" height="80" fill="#c8ccc5"/>
+  <rect x="0" y="716" width="1200" height="4" fill="#205820"/>
+  <!-- cota -->
+  <g stroke="#171a18" stroke-width="1" opacity="0.35">
+    <line x1="80" y1="200" x2="1120" y2="200"/>
+    <line x1="80" y1="192" x2="80" y2="208"/>
+    <line x1="1120" y1="192" x2="1120" y2="208"/>
+  </g>
+  <text x="588" y="188" font-family="monospace" font-size="13" letter-spacing="3" fill="#171a18" opacity="0.4">VÃO LIVRE</text>
+</svg>

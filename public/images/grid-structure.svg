@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" preserveAspectRatio="xMidYMid slice">
+  <rect width="900" height="900" fill="#dfe2dc"/>
+  <!-- planta de fundações -->
+  <g stroke="#8b908a" stroke-width="2" fill="none">
+    <line x1="150" y1="80" x2="150" y2="820"/>
+    <line x1="350" y1="80" x2="350" y2="820"/>
+    <line x1="550" y1="80" x2="550" y2="820"/>
+    <line x1="750" y1="80" x2="750" y2="820"/>
+    <line x1="80" y1="150" x2="820" y2="150"/>
+    <line x1="80" y1="350" x2="820" y2="350"/>
+    <line x1="80" y1="550" x2="820" y2="550"/>
+    <line x1="80" y1="750" x2="820" y2="750"/>
+  </g>
+  <!-- sapatas -->
+  <g fill="#b3b7b0" stroke="#767b74" stroke-width="2">
+    <rect x="110" y="110" width="80" height="80"/>
+    <rect x="310" y="110" width="80" height="80"/>
+    <rect x="510" y="110" width="80" height="80"/>
+    <rect x="710" y="110" width="80" height="80"/>
+    <rect x="110" y="310" width="80" height="80"/>
+    <rect x="510" y="310" width="80" height="80"/>
+    <rect x="710" y="310" width="80" height="80"/>
+    <rect x="110" y="510" width="80" height="80"/>
+    <rect x="310" y="510" width="80" height="80"/>
+    <rect x="710" y="510" width="80" height="80"/>
+    <rect x="110" y="710" width="80" height="80"/>
+    <rect x="310" y="710" width="80" height="80"/>
+    <rect x="510" y="710" width="80" height="80"/>
+    <rect x="710" y="710" width="80" height="80"/>
+  </g>
+  <!-- pilares -->
+  <g fill="#054205">
+    <rect x="136" y="136" width="28" height="28"/>
+    <rect x="336" y="136" width="28" height="28"/>
+    <rect x="536" y="136" width="28" height="28"/>
+    <rect x="736" y="136" width="28" height="28"/>
+    <rect x="136" y="336" width="28" height="28"/>
+    <rect x="536" y="336" width="28" height="28"/>
+    <rect x="736" y="336" width="28" height="28"/>
+    <rect x="136" y="536" width="28" height="28"/>
+    <rect x="336" y="536" width="28" height="28"/>
+    <rect x="736" y="536" width="28" height="28"/>
+    <rect x="136" y="736" width="28" height="28"/>
+    <rect x="336" y="736" width="28" height="28"/>
+    <rect x="536" y="736" width="28" height="28"/>
+    <rect x="736" y="736" width="28" height="28"/>
+  </g>
+  <!-- eixos nomeados -->
+  <g font-family="monospace" font-size="15" fill="#171a18" opacity="0.5">
+    <text x="144" y="60">A</text>
+    <text x="344" y="60">B</text>
+    <text x="544" y="60">C</text>
+    <text x="744" y="60">D</text>
+    <text x="46" y="156">1</text>
+    <text x="46" y="356">2</text>
+    <text x="46" y="556">3</text>
+    <text x="46" y="756">4</text>
+  </g>
+</svg>
