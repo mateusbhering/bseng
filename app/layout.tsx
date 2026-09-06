@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://beltraosantosengenharia.com.br";
+const siteUrl = "https://www.beltraosantoseng.com.br";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
