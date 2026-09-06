@@ -42,6 +42,14 @@ export default function Footer() {
               {contact.phoneDisplay}
             </a>
             <a
+              href={contact.whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-white/60 transition-colors duration-200 hover:text-white"
+            >
+              WhatsApp
+            </a>
+            <a
               href={contact.emailHref}
               className="text-sm break-all text-white/60 transition-colors duration-200 hover:text-white"
             >

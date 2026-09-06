@@ -9,6 +9,7 @@ import {
 export const contact = {
   phoneDisplay: "(31) 3225-8276",
   phoneHref: "tel:+553132258276",
+  whatsappHref: "https://wa.me/553132258276",
   email: "beltraosantoseng@gmail.com",
   emailHref: "mailto:beltraosantoseng@gmail.com",
   city: "Belo Horizonte, MG",
