@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Beltrão Santos Engenharia
 
-## Getting Started
+Site institucional da **Beltrão Santos Engenharia**, empresa de engenharia estrutural atuante desde 1991 em Belo Horizonte, MG. Homepage única com seções de apresentação, princípios, serviços, tipos de projeto, galeria, processo de trabalho, contato e localização.
 
-First, run the development server:
+## Stack
+
+- [Next.js](https://nextjs.org) (App Router) + TypeScript
+- [Tailwind CSS v4](https://tailwindcss.com) (tokens de tema em `app/globals.css`)
+- [Framer Motion](https://www.framer.com/motion/) — animações sutis de entrada (respeita `prefers-reduced-motion`)
+- [Lucide React](https://lucide.dev) — ícones
+
+## Rodando localmente
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Outros comandos:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build   # build de produção
+npm run start   # serve o build
+npm run lint    # ESLint
+```
 
-## Learn More
+## Estrutura
 
-To learn more about Next.js, take a look at the following resources:
+```
+app/
+  layout.tsx      # fontes (Manrope, Inter, Geist Mono), SEO e metadados
+  page.tsx        # composição da homepage
+  globals.css     # tokens de cor/tipografia e utilitários (grid técnico, rótulos)
+components/
+  Navbar.tsx      # navegação fixa com backdrop blur e menu mobile
+  Hero.tsx        # seção de abertura
+  About.tsx       # empresa / desde 1991
+  Principles.tsx  # quatro pilares
+  Services.tsx    # especialidades
+  ProjectTypes.tsx
+  ProjectGallery.tsx
+  Process.tsx     # etapas de trabalho (timeline)
+  CTA.tsx         # seção escura de autoridade
+  Contact.tsx     # canais de contato (telefone / e-mail)
+  Map.tsx         # Google Maps incorporado
+  Footer.tsx
+  Logo.tsx        # logo + wordmark
+  Reveal.tsx      # wrapper de animação ao rolar
+lib/
+  data.ts         # dados das seções (serviços, princípios, etapas, contato)
+public/
+  logo.png        # logo oficial
+  images/         # imagens das seções
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Identidade visual
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+A paleta de verdes foi extraída diretamente do logo oficial:
 
-## Deploy on Vercel
+| Token | Cor | Uso |
+| --- | --- | --- |
+| `green` | `#054205` | CTAs, números, acentos |
+| `green-mid` | `#205820` | hovers em fundo escuro |
+| `green-dark` | `#032e03` | estado hover de botões |
+| `bg` | `#f7f8f5` | fundo principal |
+| `ink` | `#171a18` | texto e seções escuras |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Tipografia: **Manrope** (títulos), **Inter** (texto) e **Geist Mono** (rótulos técnicos decorativos).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Trocando as imagens
+
+As imagens atuais em `public/images/` são placeholders (SVG). Para usar fotografias reais, substitua os arquivos mantendo os nomes ou atualize os caminhos em `lib/data.ts` (`projectTypes` e `galleryItems`) e em `components/Hero.tsx`.
+
+## Contato
+
+- Telefone: (31) 3225-8276
+- E-mail: beltraosantoseng@gmail.com
+
+---
+
+Engenharia Estrutural • Belo Horizonte, MG • Desde 1991
